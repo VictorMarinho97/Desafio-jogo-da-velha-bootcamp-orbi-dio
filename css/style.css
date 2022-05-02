@@ -1,0 +1,37 @@
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.quadrado {
+    text-align: center;
+    width: 50px;
+    display: inline-block; /*Se não colocássemos isso daqui, os quadrados iriam ficar um abaixo do outro, numa coluna só.*/
+    background: #eee; /*url('../imagens/fundo-quadrado.png') no-repeat center;*/
+    background-size: 113% 110%;
+    padding: 40px;
+    margin: 5px;
+    font-size: 60px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.jogador, .vencedor {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(180deg, #ecf279, #ecb170);
+    border-radius: 10px;
+    cursor: pointer;
+}
+

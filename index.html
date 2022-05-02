@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Jogo da velha - Desafie seus amigos!</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+
+        <h1>Jogo da velha</h1>
+
+        <div> <!--Como são 3 divs diferentes, não precisamos usar float-->
+
+            <div class="quadrado" id="1" onclick="escolherQuadrado(this.id)">-</div> <!--Com o this.id, estamos dizendo que pegamos o cursor referente ao id atual.--> 
+            <div class="quadrado" id="2" onclick="escolherQuadrado(this.id)">-</div> <!--onclick necessário para unir a ação js com a tag atual.-->
+            <div class="quadrado" id="3" onclick="escolherQuadrado(this.id)">-</div>
+
+        </div>
+
+        <div>
+
+            <div class="quadrado" id="4" onclick="escolherQuadrado(this.id)">-</div>
+            <div class="quadrado" id="5" onclick="escolherQuadrado(this.id)">-</div>
+            <div class="quadrado" id="6" onclick="escolherQuadrado(this.id)">-</div>
+
+        </div>
+
+        <div>
+
+            <div class="quadrado" id="7" onclick="escolherQuadrado(this.id)">-</div>
+            <div class="quadrado" id="8" onclick="escolherQuadrado(this.id)">-</div>
+            <div class="quadrado" id="9" onclick="escolherQuadrado(this.id)">-</div>
+
+        </div>
+        
+        <div class="jogador">
+
+            <label>
+                Jogador:
+            </label>
+
+            <label id="jogador-selecionado">
+
+            </label>
+        </div>
+
+        <div class="vencedor">
+
+            <label>
+                Vencedor:
+            </label>
+
+            <label id="vencedor-selecionado">
+
+            </label>
+        </div>
+
+        <div>
+            <img src="imagens/ÍconeReiniciar.png" width="20px">
+
+            <button onclick="reiniciar()">
+                Reiniciar
+            </button>
+        </div>
+
+
+    <script src="js/script.js"></script>
+    </body>
+</html>
